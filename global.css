@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Lora", serif; 
+    font-style: normal;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+}
+
+header {
+    background-color: green;
+    color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    gap: 6rem;
+    height: 6rem;
+     
+}
+
+header ul {
+    display: inline;
+    gap: 6rem;
+    list-style: none;
+    margin-left: auto;  
+}
+
+header li {
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
