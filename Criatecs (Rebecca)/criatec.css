@@ -1,0 +1,52 @@
+@import url(../globais/global.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #F1DEFF;
+  color: #2B1475;
+}
+
+h1 {
+  align-items: center;
+  padding-left: 83rem;
+  padding-top: 5rem;
+  font-size: 4rem;
+}
+
+h2 {
+  padding-left: 40rem;
+  font-size: 2rem;
+}
+.compartilhe {
+  
+}
+
+.container {
+  background-color: #D6BDFF;
+  height: 40rem; 
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: ;
+  
+}
+
+.mural {
+  background-color: #FFF6EB;
+  height: 40rem; 
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  
+}
+

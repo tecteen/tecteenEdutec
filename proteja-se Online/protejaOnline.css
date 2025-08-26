@@ -1,1 +1,126 @@
-@import url(../global.css);
+@import url(../globais/global.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --white: #FFFFFF;
+    --yellow: #E1B142;
+    --purple: #706492;
+    --baby-blue: #B9CFFE;
+    --salmon: #FF6B6B;
+    
+    --light-yellow: #FFF6D1;
+    --very-light-yellow: #FFF8EA;
+    --light-salmon: #FFE0E0;
+    --very-light-purple: #F1DEFF;
+    --light-purple: #D6BDFF;
+}
+
+body {
+    background-color: var(--light-yellow);
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 8rem 14rem;
+}
+
+main h2{
+    line-height: 1;
+}
+
+main img {
+    max-width: 110rem;
+    transform: rotate(6deg);
+}
+
+h1 {
+    font-family: "Konkhmer Sleokchher", system-ui;
+    color: var(--purple);
+    font-size: 6rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: "Konkhmer Sleokchher", system-ui;
+    color: var(--purple); 
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 40;
+}
+
+p {
+    font-size: 1.6rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.conteudo-principal {
+    max-width: 40%;
+    margin: 5rem;
+}
+
+.conteudo-principal img{
+    max-width: 70rem;
+}
+
+.conteudo-principal h1{
+    margin-bottom: 3rem;
+    max-width: 55.4rem;
+}
+
+.conteudo-principal p{
+    max-width: 55.4rem;
+}
+
+.secao2{
+    padding: 4rem 19rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    background-color: var(--baby-blue);
+}
+
+.secao2 p{
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    gap: 4rem;
+}
+
+.secao2 img {
+    max-width: 41.3rem;
+}
+
+.segundoConteudo {
+    justify-content: center;
+    gap: 3rem;
+}
+
+.secao3{
+    padding: 4rem 8rem;
+    display: flex;
+    gap: 7rem;
+    align-items: flex-start;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+
+.secao3 img{
+    width: 40rem; 
+}
+
+
+.terceiroConteudo{
+    max-width: 45%;
+}

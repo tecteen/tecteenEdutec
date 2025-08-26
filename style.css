@@ -1,0 +1,238 @@
+@import url(./globais/global.css);
+
+:root {
+  font-size: 62.5%;
+
+  --white: #FFFFFF;
+  --yellow: #E1B142;
+  --purple: #706492;
+  --baby-blue: #B9CFFE; 
+  --salmon: #FF6B6B;
+  
+  --light-yellow: #FFF6D1;
+  --very-light-yellow: #FFF8EA; 
+  --light-salmon: #FFE0E0;
+  --very-light-purple: #F1DEFF;
+  --light-purple: #D6BDFF;
+
+}
+
+body {
+  background-color: var(--light-yellow);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--purple);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--purple);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-inline: 8rem;
+  background-color: var(--very-light-yellow);
+  flex-wrap: wrap;
+}
+
+main img {
+  max-width: 50%;
+  width: 80rem;
+  height: auto;
+}
+
+main p {
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.principal {
+  margin-left: 5rem;
+  max-width: 60rem;
+}
+
+.principal h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  color: var(--purple);
+  margin-top: 7rem;
+  margin-bottom: 3.5rem;
+  font-weight: bold;
+}
+
+.principal p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  background: var(--salmon);  
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.principal .saiba-mais {
+  font-size: 1.6rem;
+  display: inline-block;
+  background: var(--purple);
+  color: var(--white);
+  padding: 1.4rem 2.8rem;
+  border-radius: 8rem;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  margin-bottom: 5rem;
+}
+
+.principal .saiba-mais:hover {
+  background: #5531b0;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+h2{
+  font-size: 3.5rem;
+  margin-left: 13rem;
+  margin-top: 17rem;
+  margin-bottom: 8rem;
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.cards-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12px, 1fr)); 
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.card-conteudo, .card-dicas, .card-jogo {
+  border-radius: 1.5rem; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 2.5rem; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  min-height: 300px; 
+}
+
+.card-conteudo {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.card-dicas {
+  background-color: var(--baby-blue);
+  color: var(--purple);
+}
+
+.card-jogo {
+  background-color: var(--salmon);
+  color: var(--white);
+}
+
+
+.cards-home img {
+  width: 200px; 
+  height: auto;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.cards-home h3 {
+  font-size: 1.6rem;
+  margin: 0.8rem 0; 
+  font-weight: 700;
+  color: inherit; 
+}
+
+.cards-home p {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem; 
+}
+
+.card-conteudo p,
+.card-jogo p {
+  color: var(--white);
+}
+
+.saiba-mais {
+  background-color: var(--white);
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card-conteudo .saiba-mais {
+  background-color: var(--white);
+  color: var(--yellow);
+}
+
+.card-dicas .saiba-mais {
+  background-color: var(--white);
+  color: var(--baby-blue);
+}
+
+.card-jogo .saiba-mais {
+  background-color: var(--white);
+  color: var(--salmon);
+}
+
+.card-.saiba-mais:hover {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+
+
+@media (max-width: 1300px) {
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main img {
+    max-width: 80%;
+    padding: 0;
+  }
+
+  .principal {
+    margin-left: 0;
+  }
+
+  .principal h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-top: 3rem;
+  }
+
+  .cards-home {
+    grid-template-columns: 1fr;
+  }
+    
+  .cards-home div {
+    margin-bottom: 1rem;
+  }
+}
+
+
