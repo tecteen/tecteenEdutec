@@ -30,12 +30,12 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
-    padding: 8rem 14rem;
+    padding: 6rem 3rem;
 }
 
 main img {
     max-width: 110rem;
-    transform: rotate(6deg);
+    transform: rotate(5deg);
 }
 
 h1 {
@@ -62,25 +62,25 @@ p {
 }
 
 .conteudo-principal {
-    max-width: 40%;
+    max-width: 70%;
     margin: 5rem;
 }
 
 .conteudo-principal h1{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     max-width: 55.4rem;
 }
 
 .conteudo-principal p{
-    max-width: 55.4rem;
+    max-width: 50.4rem;
 }
 
 .conteudo-principal img{
-    max-width: 70rem;
+    max-width: 35rem;
 }
 
 .secao2{
-    padding: 5rem 17rem;
+    padding: 3rem 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,25 +91,24 @@ p {
 .secao2 p{
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    max-width:80%;
 }
 
 .secao2 img {
-    max-width: 42.3rem;
+    max-width: 45.3rem;
 }
 
 .segundoConteudo {
     align-items: center;
-    max-width: 50%;
+    max-width: 57%;
 }
 
 .secao3{
-    padding: 4rem 8rem;
+    padding: 3rem 3rem;
     display: flex;
-    gap: 7rem;
-    align-items: flex-start;
+    gap: 3rem;
+    align-items: center;
     margin-top: 4rem;
-    margin-inline: 5rem;
     justify-content: space-around;
 }
 
@@ -118,15 +117,95 @@ p {
 }
 
 .secao3 p{
-    max-width: 3rem;
+    max-width: 80%;
 }
 
 .secao3 img{
-    max-width: 55rem; 
+    max-width: 50rem; 
 }
 
 
 .terceiroConteudo{
-    max-width: 45%;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-block: 4rem;
+}
 
+
+.cards {
+    margin-top: 7rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.cards div {
+    width: 28.8rem;
+    height: 40rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: var(--white);
+    text-align: center;
+    box-shadow: 0 .4rem 1.2rem rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards img {
+    width: 9.6rem;
+    height: auto;
+    margin-bottom: 2.4rem;
+}
+
+.cards h2 {
+    margin-bottom: 2.88rem;
+    font-size: 3.2rem;
+    color: var(--white);
+}
+
+.cards p {
+    font-size: 1.92rem;
+    margin-bottom: 3.2rem;
+    color: var(--white);
+}
+
+.card-azul h2, .card-azul p {
+    color: var(--purple);
+}
+
+.cards a {
+    background: var(--white);
+    padding: 1.44rem 7.68rem;
+    border-radius: 2.5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.card-salmao {
+    background-color: var(--salmon);
+}
+
+.card-salmao a {
+    color: var(--salmon);
+}
+
+.card-azul {
+    background-color: var(--baby-blue);
+}
+
+.card-azul a {
+    color: var(--baby-blue);
+}
+
+.card-roxo {
+    background-color: var(--purple);
+}
+
+.card-roxo a {
+    color: var(--purple);
 }

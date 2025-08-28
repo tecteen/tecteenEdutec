@@ -10,8 +10,10 @@
     --white: #FFFFFF;
     --yellow: #E1B142;
     --purple: #706492;
+    --Lavender-Gray: #8D86A9;
     --baby-blue: #B9CFFE;
     --salmon: #FF6B6B;
+    --black: #000000;
     
     --light-yellow: #FFF6D1;
     --very-light-yellow: #FFF8EA;
@@ -27,7 +29,7 @@ body {
 
 h1 {
     font-family: "Konkhmer Sleokchher", system-ui;
-    color: var(--purple);
+    color: var(--Lavender-Gray);
     font-size: 5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -35,10 +37,10 @@ h1 {
 
 h2 {
     font-family: "Konkhmer Sleokchher", system-ui;
-    color: var(--purple); 
+    color: var(--black); 
     font-size: 3rem;
     margin-bottom: 2rem;
-    font-weight: 40;
+    font-weight: 700;
 }
 
 p {
@@ -49,13 +51,207 @@ p {
 
 main {
     display: flex;
-    justify-content: space-between;
-    align-items: ;
+    justify-content: center;
     gap: 4rem;
-    padding: 5rem 8rem;
+    margin-top: 9rem;
+    align-items: center;
 }
 
 main img {
-    max-width: 80rem;
+    max-width: 60%;
 }
 
+.secao1{
+    margin-bottom: 8rem;
+}
+
+.secao1 p, h1,h2{
+    width: 60%;
+    align-items: center;
+}
+
+.secao2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin-inline: 5rem;
+    margin-top: 6rem;
+    gap: 1rem;
+}
+
+.secao2 h1{
+    margin-bottom: 3rem;
+}
+
+.secao2 img{
+    max-width: 50%;
+}
+
+.secao2 p, h1,h2{
+    width: 90.1%;
+    align-items: center;
+}
+
+.textoGrifado{
+    background-color: var(--yellow);
+    padding: 1rem;
+    border-radius: 1.2rem;
+    margin-block: 3.2rem;
+    max-width: 90.1%;
+}
+
+.secao3{
+    background: var(--baby-blue);
+    max-width: 90%;
+    margin: auto;
+    padding: 3.5rem;
+    display: flex;
+    border-radius: 1.2rem;
+    margin-block: 7rem;
+}
+
+.terceiroConteudo{
+    max-width: 40%;
+    margin-top: 4rem;
+    margin-left: 5rem;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+   margin-left: 15rem;
+}
+
+.video-card {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+}
+
+.video-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.video-frame {
+    flex-shrink: 0;
+    width: 50rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    display: flex;
+    gap: 2rem;
+    background: var(--white);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    box-shadow: 0 .4rem 1.2rem rgba(0,0,0,0.1);
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 26rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.video-frame p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #333;
+}
+
+.secao4{
+    display: flex;
+    margin-block: 4rem;
+    gap: 7rem;
+    margin-inline: 7rem;
+    margin-bottom: 5rem;
+}
+
+.ultimoConteudo{
+    max-width: 35%;
+    margin-top: 5rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 9rem;
+}
+
+.cards div {
+    width: 28.8rem;
+    height: 40rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: var(--white);
+    text-align: center;
+    box-shadow: 0 .4rem 1.2rem rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards img {
+    width: 9.6rem;
+    height: auto;
+    margin-bottom: 2.4rem;
+}
+
+.cards h2 {
+    margin-bottom: 2.88rem;
+    font-size: 3.2rem;
+    color: var(--white);
+}
+
+.cards p {
+    font-size: 1.92rem;
+    margin-bottom: 3.2rem;
+    color: var(--white);
+}
+
+.card-amarelo p {
+    margin-bottom: 5.5rem;
+}
+
+.cards a {
+    background: var(--white);
+    padding: 1.44rem 7.68rem;
+    border-radius: 2.5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.card-salmao {
+    background-color: var(--salmon);
+}
+
+.card-salmao a {
+    color: var(--salmon);
+}
+
+.card-roxo {
+    background-color: var(--purple);
+}
+
+.card-roxo a {
+    color: var(--purple);
+}
+
+.card-amarelo {
+    background-color: var(--yellow);
+}
+
+.card-amarelo a {
+    color: var(--yellow);
+}

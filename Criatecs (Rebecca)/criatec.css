@@ -21,10 +21,15 @@ h1 {
 }
 
 h2 {
-  padding-left: 35.8rem;
+  padding-top: 5rem;
+  padding-left: 53rem;
   font-size: 2.5rem;
   padding-top: 5rem;
   padding-bottom: 2rem;
+}
+
+h3 {
+
 }
 
 .ideia {
@@ -44,23 +49,37 @@ h2 {
 
 .container {
   background-color: #D6BDFF;
-  height: 40rem;
-  align-content: center;
+  width: 127.8rem;
+  height: 68.5rem;
+  margin-inline: auto;
+  border-radius: 5rem;
+  padding-inline: 4rem;
+  gap: 4rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90rem;
-  height: 47.5rem;
-  margin-inline: auto;
-  border-radius: 5rem;
 }
 
-.segundo {
-  width: 34.8rem;
-  height: 34rem;
-  margin-left: 45rem;
-  margin-bottom: 4rem;
-  
+.postagem {
+  background: #FFF6D1;
+  width: 100%;
+  font-size: 4rem;
+  border-radius: 5rem;
+
+  h3 {
+    padding: 7rem;
+    padding-bottom: 9rem;
+  }
+
+  div {
+    background: #FFF;
+    padding: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
 }
 
 .mural {
@@ -74,3 +93,4 @@ h2 {
   margin-inline: auto;
   border-radius: 80px;
 }
+

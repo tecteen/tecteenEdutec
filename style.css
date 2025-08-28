@@ -3,6 +3,7 @@
 :root {
   font-size: 62.5%;
 
+  --black: #000;
   --white: #FFFFFF;
   --yellow: #E1B142;
   --purple: #706492;
@@ -30,6 +31,7 @@ h1 {
 }
 
 p {
+  font-size: 1.6rem;
   line-height: 1.6;
   color: var(--purple);
 }
@@ -75,7 +77,6 @@ main p {
 }
 
 .principal p {
-  font-size: 1.5rem;
   line-height: 1.6;
   background: var(--salmon);  
   padding: 1.5rem;
@@ -111,19 +112,17 @@ h2{
 }
 
 .cards-home {
+  margin-bottom: 10rem;
   gap:6rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
-  max-width: 90rem;
+  justify-content: center;
   margin: 0 auto;
 }
 
 .card-conteudo, .card-dicas, .card-jogo {
-  height: 45rem;
-  width: 30rem;
+  height: 40rem;
+  width: 27rem;
   border-radius: 2rem; 
-  box-shadow: 0 0.8rem 20rem rgba(0,0,0,0.15);
   padding: 2.5rem; 
   text-align: center;
   display: flex;
@@ -148,19 +147,21 @@ h2{
 
 
 .cards-home img {
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  width: 90rem;
+  margin-bottom: 2rem;
   align-items: center;
 }
 
 .cards-home h3 {
   font-size: 1.8rem;
-  margin: 0.8rem 0; 
+  margin: 1rem 0; 
   font-weight: 700;
 }
 
 .cards-home p {
-  font-size: 1.3rem;
-  margin-bottom: 1.2rem; 
+  font-size: 1.6rem;
+  margin-bottom: 1.7rem; 
 }
 
 .card-conteudo p,
@@ -170,16 +171,19 @@ h2{
 
 
 .card-conteudo .saiba-mais {
+  margin-top: 2rem;
   background-color: var(--white);
   color: var(--yellow);
 }
 
 .card-dicas .saiba-mais {
+  margin-top: 2rem;
   background-color: var(--white);
   color: var(--baby-blue);
 }
 
 .card-jogo .saiba-mais {
+  margin-top: 2rem;
   background-color: var(--white);
   color: var(--salmon);
 }

@@ -63,7 +63,7 @@ h1 {
     width: 28.8rem;
     height: 40rem;
     padding: 2rem;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     color: var(--white);
     text-align: center;
     box-shadow: 0 .4rem 1.2rem rgba(0,0,0,0.15);
