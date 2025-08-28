@@ -83,7 +83,7 @@ main p {
   margin-bottom: 2.5rem;
 }
 
-.principal .saiba-mais {
+.saiba-mais {
   font-size: 1.6rem;
   display: inline-block;
   background: var(--purple);
@@ -92,17 +92,15 @@ main p {
   border-radius: 8rem;
   font-weight: bold;
   border: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.15);
   transition: all 0.3s ease;
   margin-bottom: 5rem;
 }
 
-.principal .saiba-mais:hover {
-  background: #5531b0;
+.saiba-mais:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-
 h2{
   font-size: 3.5rem;
   margin-left: 13rem;
@@ -113,25 +111,24 @@ h2{
 }
 
 .cards-home {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12px, 1fr)); 
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 900px;
+  gap:6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  max-width: 90rem;
   margin: 0 auto;
-  align-items: start;
 }
 
 .card-conteudo, .card-dicas, .card-jogo {
-  border-radius: 1.5rem; 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  height: 45rem;
+  width: 30rem;
+  border-radius: 2rem; 
+  box-shadow: 0 0.8rem 20rem rgba(0,0,0,0.15);
   padding: 2.5rem; 
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  min-height: 300px; 
+  justify-content: space-between; 
 }
 
 .card-conteudo {
@@ -151,17 +148,14 @@ h2{
 
 
 .cards-home img {
-  width: 200px; 
-  height: auto;
   margin-bottom: 1rem;
-  align-self: center;
+  align-items: center;
 }
 
 .cards-home h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0.8rem 0; 
   font-weight: 700;
-  color: inherit; 
 }
 
 .cards-home p {
@@ -174,15 +168,6 @@ h2{
   color: var(--white);
 }
 
-.saiba-mais {
-  background-color: var(--white);
-  border: none;
-  padding: 0.8rem 1.6rem;
-  border-radius: 2rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
 
 .card-conteudo .saiba-mais {
   background-color: var(--white);
@@ -198,13 +183,6 @@ h2{
   background-color: var(--white);
   color: var(--salmon);
 }
-
-.card-.saiba-mais:hover {
-  background-color: var(--purple);
-  color: var(--white);
-}
-
-
 
 @media (max-width: 1300px) {
   main {

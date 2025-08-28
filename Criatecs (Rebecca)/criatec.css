@@ -15,38 +15,62 @@ body {
 
 h1 {
   align-items: center;
-  padding-left: 83rem;
+  padding-left: 73rem;
   padding-top: 5rem;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 h2 {
-  padding-left: 40rem;
-  font-size: 2rem;
+  padding-left: 35.8rem;
+  font-size: 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
+
+.ideia {
+  padding-left: 35.8rem;
+  font-size: 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
 .compartilhe {
-  
+  position: absolute;
+  width: 817px;
+  height: 165px;
+  left: 311px;
+  top: 1639px;
 }
 
 .container {
   background-color: #D6BDFF;
-  height: 40rem; 
+  height: 40rem;
   align-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: ;
+  width: 90rem;
+  height: 47.5rem;
+  margin-inline: auto;
+  border-radius: 5rem;
+}
+
+.segundo {
+  width: 34.8rem;
+  height: 34rem;
+  margin-left: 45rem;
+  margin-bottom: 4rem;
   
 }
 
 .mural {
   background-color: #FFF6EB;
-  height: 40rem; 
+  height: 40rem;
   align-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5%;
-  
+  width: 127.8rem;
+  margin-inline: auto;
+  border-radius: 80px;
 }
-
