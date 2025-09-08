@@ -237,4 +237,7 @@ main h1 {
 .card-amarelo a {
     color: var(--yellow);
 }
- 
+
+.jogo1 a:hover {
+    filter: brightness(1.1);
+}
