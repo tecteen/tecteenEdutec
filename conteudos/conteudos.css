@@ -32,12 +32,11 @@ header {
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: var(--light-yellow);
-
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: var(--light-yellow);
 }
 
 main {
@@ -103,6 +102,11 @@ h1 {
     font-weight: bold;
     font-size: 1.6rem;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.cards a:hover {
+    transform: scale(1.05);
 }
 
 .card-salmao {
@@ -135,4 +139,15 @@ h1 {
 
 .card-amarelo a {
     color: var(--yellow);
+}
+
+@media (max-width: 1300px) {
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .cards {
+        justify-content: center;
+    }
 }

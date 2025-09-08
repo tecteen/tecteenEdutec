@@ -22,6 +22,8 @@
     --light-purple: #D6BDFF;
 }
 
+/*header*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -68,4 +70,78 @@
 
 .nav-links a:hover {
     color: var(--salmon); 
+}
+
+.info{
+    margin-top: 15rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 4rem;
+    padding-block: 2.5rem;
+  }
+  
+  .info img{
+    width: 22.1rem;
+    margin-right: 5rem;
+  }
+  
+  .info p{
+    margin-block: 4rem;
+    margin-inline: 7rem;
+    
+  }
+  
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+  background-color: #ffffff;
+  margin-top: 5rem;
+}
+
+.logoRodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+}
+
+.logoRodape img {
+  width: 14rem;
+}
+
+.logoRodape h1 {
+  font-size: 2.2rem;
+  color: #6f64a6;
+  font-weight: bold;
+  margin: 0;
+}
+
+.aboutRodape {
+  max-width: 40rem;
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.aboutRodape strong {
+  font-weight: bold;
+}
+
+.contactRodape {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contactRodape a {
+  color: #5db4c9;
+  text-decoration: none;
+}
+
+.contactRodape a:hover {
+  text-decoration: underline;
 }

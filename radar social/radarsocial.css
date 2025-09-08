@@ -1,0 +1,316 @@
+@import url(../globais/global.css);
+
+:root {
+  font-size: 62.5%; 
+
+  --black: #000;
+  --white: #FFFFFF;
+  --yellow: #E1B142;
+  --purple: #706492;
+  --baby-blue: #B9CFFE; 
+  --salmon: #FF6B6B;
+
+  --light-yellow: #FFF6D1;
+  --very-light-yellow: #FFF8EA; 
+  --light-salmon: #FFE0E0;
+  --very-light-purple: #F1DEFF;
+  --light-purple: #D6BDFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: var(--light-yellow);
+  font-family: "Roboto", sans-serif;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 4rem;
+  background: #ffe0e9;
+}
+
+.hero-text {
+  padding-left: 10rem;
+}
+
+.hero-text h1 {
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+  color: var(--purple);
+}
+
+.hero-text p {
+  font-size: 1.6rem;
+}
+
+.hero-img img {
+  margin-right: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100rem;
+}
+
+.trend-section {
+  align-items: center;
+  justify-content: center;
+  display: flex;               
+  padding-top: 17rem;    
+  padding-inline: 12rem;
+  gap: 6rem;                 
+}
+
+.trend-text {
+  flex: 2;                       
+  max-width: 70rem;
+}
+
+.trend-text h2{
+  font-size: 3rem;
+}
+
+.trend-text p{
+  font-size: 1.6rem;
+}
+
+.voice-box {   
+  padding-top: 6rem;
+  position: relative;
+  max-width: 36rem;                 
+  background: #e0e6f8;           
+  padding-inline: 5rem;
+  border-radius: 1rem;
+  padding-bottom: 5rem;
+}
+
+.voice-box h3 {
+  color: #47856D;               
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+}
+
+.voice-box p {
+  background: #706492b2;         
+  color: var(--white);
+  padding: 1rem;
+  border-radius: .8rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+
+.decoracao {
+  position: absolute;
+  top: -6rem; 
+  margin-left: 17rem; 
+  width: 23rem; 
+  height: 12rem; 
+  object-fit: contain; 
+}
+
+.comente {
+  margin-block: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.comente-texto {
+  background-color: #ff6b6b; 
+  color: white;
+  padding:4.5rem;
+  border-radius: 2rem;
+  width: 30rem;
+  height: 50rem
+}
+
+.comente-texto h2 {
+  margin-top: 2.3rem;
+  color: var(--white); 
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  line-height: 1;
+}
+
+.comente-texto p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+}
+
+.comente-texto a {
+  color: #000;
+  text-decoration: none;
+  margin-top: 5rem;
+  font-size: 2rem;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1.4rem 6rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comente-imagem img {
+  width: 70rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.cards div {
+  width: 28.8rem;
+  height: 40rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: var(--white);
+  text-align: center;
+  box-shadow: 0 .4rem 1.2rem rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.cards img {
+  width: 9.6rem;
+  height: auto;
+  margin-bottom: 2.4rem;
+}
+
+.cards h2 {
+  margin-bottom: 2.88rem;
+  font-size: 3.2rem;
+}
+
+.cards p {
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.card-amarelo p {
+  font-size: 1.6rem;
+  margin-bottom: 5.5rem;
+}
+
+.card-azul h2, .card-azul p {
+  color: var(--purple);
+}
+
+.cards a {
+  background: var(--white);
+  padding: 1.44rem 7.68rem;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.cards a:hover {
+  transform: scale(1.05);
+}
+
+.card-azul {
+  background-color: var(--baby-blue);
+}
+
+.card-azul a {
+  color: var(--baby-blue);
+}
+
+.card-roxo {
+  background-color: var(--purple);
+}
+
+.card-roxo a {
+  color: var(--purple);
+}
+
+.card-amarelo {
+  background-color: var(--yellow);
+}
+
+.card-amarelo a {
+  color: var(--yellow);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+  background-color: #ffffff;
+  margin-top: 5rem;
+}
+
+
+footer p,
+footer h1 {
+  color: var(--black); 
+}
+
+.logoRodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+}
+
+.logoRodape img {
+  width: 14rem;
+}
+
+.logoRodape h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.aboutRodape {
+  max-width: 40rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.contactRodape {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contactRodape a {
+  color: #5db4c9;
+  text-decoration: none;
+}
+
+.contactRodape a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+  h1 {
+      text-align: center;
+      font-size: 4rem;
+  }
+
+  .cards {
+      justify-content: center;
+  }
+}

@@ -1,0 +1,206 @@
+@import url(/globais/global.css);
+
+:root {
+  font-size: 62.5%;
+
+  --black: #000;
+  --white: #FFFFFF;
+  --yellow: #E1B142;
+  --purple: #706492;
+  --baby-blue: #B9CFFE; 
+  --salmon: #FF6B6B;
+  
+  --light-yellow: #FFF6D1;
+  --very-light-yellow: #FFF8EA; 
+  --light-salmon: #FFE0E0;
+  --very-light-purple: #F1DEFF;
+  --light-purple: #D6BDFF;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem; 
+  background-color: white;
+  border-bottom: none;
+}
+
+main {
+  background-image: url('/global-imgs/background-comente.png');
+  background-repeat: no-repeat;
+  background-size: cover;   
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+}
+
+.comentario-container {
+  margin-left: 10rem;
+  height: 75rem;
+  width: 100rem;
+  background-color: var(--purple);
+  color: #fff;        
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.8rem 2rem rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.comentario-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.comentario-header h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  margin: 0;
+}
+
+.comentario-header img {
+  margin-left: 40rem;
+  width: 15rem;
+  height: auto;
+}
+
+.comentario-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.comentario-container input,
+.comentario-container textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.comentario-container textarea {
+  height: 30rem;
+}
+
+.comentario-container button {
+  box-shadow: 0 0.8rem 2rem rgba(0,0,0,0.25);
+  background-color: var(--salmon);
+  border: none;
+  padding: 1.2rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.6rem;
+  align-self: center;     
+  width: 14rem;
+}
+
+.comentario-container button:hover {
+  background-color: #e05555;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Fundo escuro */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Caixa central */
+.popup-box {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 1.6rem;
+  text-align: center;
+  max-width: 40rem;
+  width: 90%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: scaleIn 0.3s ease;
+}
+
+/* Ícone */
+.popup-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 1s infinite alternate;
+}
+
+/* Título */
+.popup-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Texto */
+.popup-box p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Botão fechar */
+.popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Botão principal */
+.popup-btn {
+  background: var(--salmon);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.popup-btn:hover {
+  background: #e05555;
+}
+
+/* Animações */
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+/* Esconder inicialmente */
+.hidden {
+  display: none;
+}

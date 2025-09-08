@@ -119,6 +119,10 @@ h2{
   margin: 0 auto;
 }
 
+.cards-home a{
+  text-decoration: none;
+}
+
 .card-conteudo, .card-dicas, .card-jogo {
   height: 40rem;
   width: 27rem;
@@ -186,6 +190,58 @@ h2{
   margin-top: 2rem;
   background-color: var(--white);
   color: var(--salmon);
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+  background-color: #ffffff;
+  margin-top: 5rem;
+}
+
+
+footer p,
+footer h1 {
+  color: var(--black); 
+}
+
+.logoRodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+}
+
+.logoRodape img {
+  width: 14rem;
+}
+
+.logoRodape h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.aboutRodape {
+  max-width: 40rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.contactRodape {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contactRodape a {
+  color: #5db4c9;
+  text-decoration: none;
+}
+
+.contactRodape a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1300px) {

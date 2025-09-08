@@ -1,0 +1,17 @@
+@import url("../globais/global.css");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --misty-rose: #FFE0E0;
+  --cornsilk: #FFF6D1; 
+}
+
+body {
+  background-color: var(--cornsilk);
+}
+

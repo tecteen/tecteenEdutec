@@ -51,18 +51,20 @@ p {
 
 main {
     display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 9rem;
+    margin-top: 7rem;
+    margin-inline: 9rem;
     align-items: center;
 }
 
 main img {
-    max-width: 60%;
+    width: 57rem;
 }
 
 .secao1{
+    margin-top: 5rem;
     margin-bottom: 8rem;
+    margin-inline: 10rem;
+    gap: 1rem;
 }
 
 .secao1 p, h1,h2{
@@ -72,12 +74,10 @@ main img {
 
 .secao2{
     display: flex;
-    justify-content: center;
+    margin-top: 5rem;
     align-items: center;
-    max-width: 80%;
-    margin-inline: 5rem;
-    margin-top: 6rem;
-    gap: 1rem;
+    margin-inline: 19rem;
+    gap: 5rem;
 }
 
 .secao2 h1{
@@ -85,26 +85,32 @@ main img {
 }
 
 .secao2 img{
-    max-width: 50%;
+    max-width: 30%;
 }
 
 .secao2 p, h1,h2{
-    width: 90.1%;
+    width: 80.1%;
     align-items: center;
+    max-width: 70.1%;
+}
+
+.segundoConteudo{
+    max-width: 84%;
 }
 
 .textoGrifado{
     background-color: var(--yellow);
-    padding: 1rem;
+    padding: 1.7rem;
     border-radius: 1.2rem;
-    margin-block: 3.2rem;
-    max-width: 90.1%;
+    margin-block: 4.2rem;
+    font-weight: 700;
+    width: 78rem;
 }
 
 .secao3{
     background: var(--baby-blue);
-    max-width: 90%;
-    margin: auto;
+    max-width: 70%;
+    margin-inline: 30rem;
     padding: 3.5rem;
     display: flex;
     border-radius: 1.2rem;
@@ -120,7 +126,7 @@ main img {
 .videos {
     display: flex;
     flex-direction: column;
-   margin-left: 15rem;
+    margin-left: 15rem;
 }
 
 .video-card {
@@ -169,9 +175,9 @@ main img {
 
 .secao4{
     display: flex;
-    margin-block: 4rem;
+    margin-block: 5rem;
     gap: 7rem;
-    margin-inline: 7rem;
+    margin-inline: 30rem;
     margin-bottom: 5rem;
 }
 
@@ -191,7 +197,7 @@ main img {
 .cards div {
     width: 28.8rem;
     height: 40rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
     color: var(--white);
     text-align: center;
@@ -208,7 +214,7 @@ main img {
 }
 
 .cards h2 {
-    margin-bottom: 2.88rem;
+    margin-bottom: 2.9rem;
     font-size: 3.2rem;
     color: var(--white);
 }
