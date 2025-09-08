@@ -22,34 +22,38 @@
       </ul>
     </nav>
   </header>
-<main>
-  <div class="comentario-container" id="comentarioBox">
-    <span class="close-btn" onclick="fecharFormulario()">✖</span>
-    
-    <div class="comentario-header">
-      <h1>Deixe seu comentário</h1>
-      <img src="/global-imgs/icone-coracao.png" alt="ícone coração">
-    </div>
-  
-    <form id="comentarioForm">
-      <input type="text" placeholder="Digite aqui seu nome..." required>
-      <input type="email" placeholder="Digite aqui seu e-mail..." required>
-      <textarea placeholder="Digite aqui seu relato..." required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-</main>
 
-<!-- Overlay -->
-<div class="popup-overlay hidden" id="popupSucesso">
-  <div class="popup-box">
-    <button class="popup-close" onclick="fecharPopup()">✖</button>
-    <div class="popup-icon">💖</div>
-    <h2>Comentário enviado!</h2>
-    <p>Sua experiência foi enviada com sucesso.<br> Obrigado por compartilhar!</p>
-    <button class="popup-btn" onclick="fecharPopup()">Fechar</button>
+  <!-- WRAPPER com o bg + ancora pro botão -->
+<section class="bg-wrap">
+  <button class="close-btn" onclick="voltarRadar()">✖</button>
+  <main>
+  
+    <div class="comentario-container" id="comentarioBox">
+      <div class="comentario-header">
+        <h1>Deixe seu comentário</h1>
+        <img src="/global-imgs/icone-coracao.png" alt="ícone coração">
+      </div>
+    
+      <form id="comentarioForm">
+        <input type="text" placeholder="Digite aqui seu nome..." required>
+        <input type="email" placeholder="Digite aqui seu e-mail..." required>
+        <textarea placeholder="Digite aqui seu relato..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Overlay -->
+  <div class="popup-overlay hidden" id="popupSucesso">
+    <div class="popup-box">
+      <button class="popup-close" onclick="fecharPopup()">✖</button>
+      <div class="popup-icon">💖</div>
+      <h2>Comentário enviado!</h2>
+      <p>Sua experiência foi enviada com sucesso.<br> Obrigado por compartilhar!</p>
+      <button class="popup-btn" onclick="fecharPopup()">Fechar</button>
+    </div>
   </div>
-</div>
+
   <script src="comente.js"></script>
 </body>
 </html>

@@ -8,8 +8,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-
-
 body {
   font-size: 62.5%; 
   background: #F1DEFF;
@@ -17,85 +15,18 @@ body {
   background-image: url(./certo.png);
 }
 
+.tinta {
+  background-image: url('./assets/image 5.png'); 
+  background-repeat: no-repeat;
+  width: 57.375rem;
+  height: 22rem;                    
+  padding-left: 63rem;
+}
 
 h1 {
-  align-items: center;
-  padding-left: 73rem;
-  padding-top: 15.8rem;
+  padding-left: 18.56rem;
+  padding-right: 21.38rem;
+  padding-top: 13.2rem;
   font-size: 6rem;
+  text-align: center; 
 }
-
-h2 {
-  padding-top: 5rem;
-  padding-left: 53rem;
-  font-size: 2.5rem;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
-
-h3 {
-
-}
-
-.ideia {
-  padding-left: 35.8rem;
-  font-size: 2.5rem;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
-
-.compartilhe {
-  position: absolute;
-  width: 817px;
-  height: 165px;
-  left: 311px;
-  top: 1639px;
-}
-
-.container {
-  background-color: #D6BDFF;
-  width: 127.8rem;
-  height: 68.5rem;
-  margin-inline: auto;
-  border-radius: 5rem;
-  padding-inline: 4rem;
-  gap: 4rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.postagem {
-  background: #FFF6D1;
-  width: 100%;
-  font-size: 4rem;
-  border-radius: 5rem;
-
-  h3 {
-    padding: 7rem;
-    padding-bottom: 9rem;
-  }
-
-  div {
-    background: #FFF;
-    padding: 4rem;
-    border-radius: 2rem;
-    display: flex;
-    gap: 5rem;
-    align-items: center;
-  }
-}
-
-.mural {
-  background-color: #FFF6EB;
-  height: 40rem;
-  align-content: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 127.8rem;
-  margin-inline: auto;
-  border-radius: 80px;
-}
-

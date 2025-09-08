@@ -1,11 +1,5 @@
-const botoes = document.querySelectorAll('.saiba-mais');
-const cardsSection = document.querySelector('.cards-home');
-
-botoes.forEach(botao => {
-  botao.addEventListener('click', () => {
-    // rola até a seção
-    cardsSection.scrollIntoView({ behavior: 'smooth' });
-    // muda a URL (opcional)
-    window.location.hash = 'cards';
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("btnScroll").addEventListener("click", function() {
+    document.getElementById("destino").scrollIntoView({ behavior: "smooth" });
   });
 });

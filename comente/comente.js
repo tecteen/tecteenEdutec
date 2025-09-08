@@ -2,7 +2,7 @@ const form = document.getElementById('comentarioForm');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  alert("Comentário enviado com sucesso!");
+  mostrarPopup(); 
   form.reset();
 });
 
@@ -17,3 +17,10 @@ function mostrarPopup() {
 function fecharPopup() {
   document.getElementById("popupSucesso").classList.add("hidden");
 }
+
+
+  function voltarRadar() {
+    window.location.href = "../radar%20social/radarsocial.html";
+  }
+
+

@@ -15,7 +15,6 @@
   --light-salmon: #FFE0E0;
   --very-light-purple: #F1DEFF;
   --light-purple: #D6BDFF;
-
 }
 
 .navbar {
@@ -32,16 +31,18 @@ main {
   background-repeat: no-repeat;
   background-size: cover;   
   background-position: center;
-  height: 100vh;
+  min-height: calc(100vh - 8rem); 
   display: flex;
-  align-items: center;
   justify-content: flex-start;  
+  align-items: flex-start;
+  padding: 4rem 0 0 10rem; 
 }
 
 .comentario-container {
-  margin-left: 10rem;
-  height: 75rem;
-  width: 100rem;
+  margin-top: 6rem;
+  width: 100%;
+  max-width: 85rem;      
+  min-height: 70rem;      
   background-color: var(--purple);
   color: #fff;        
   padding: 4rem;
@@ -63,8 +64,8 @@ main {
 }
 
 .comentario-header img {
-  margin-left: 40rem;
-  width: 15rem;
+  margin-left: auto; /* manda para direita */
+  width: 20rem;
   height: auto;
 }
 
@@ -77,21 +78,25 @@ main {
 .comentario-container input,
 .comentario-container textarea {
   width: 100%;
-  padding: 1.2rem;
+  padding: 1.6rem;
   border-radius: 1rem;
   border: none;
+  outline: none; 
   font-size: 1.6rem;
+  background-color: #fff; 
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1); 
+  resize: none;
 }
 
 .comentario-container textarea {
-  height: 30rem;
+  height: 20rem; 
 }
 
 .comentario-container button {
   box-shadow: 0 0.8rem 2rem rgba(0,0,0,0.25);
   background-color: var(--salmon);
   border: none;
-  padding: 1.2rem 2rem;
+  padding: 1.5rem 2rem;
   color: #fff;
   font-weight: bold;
   border-radius: 1rem;
@@ -106,16 +111,34 @@ main {
   background-color: #e05555;
 }
 
-.close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #fff;
+.bg-wrap {
+  position: relative;
+  min-height: calc(100vh - 8rem); /* ajusta à altura do header */
+  background-image: url('/global-imgs/background-comente.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Fundo escuro */
+.bg-wrap main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4rem 0 0 10rem; 
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.2rem;     /* distância do topo do wrapper */
+  right: 1.2rem;   /* agora no canto direito */
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: #000;     /* preto */
+  background: transparent;
+  border: none;
+  z-index: 2;      /* fica acima da caixa */
+}
+/* ================= Popup ================= */
 .popup-overlay {
   position: fixed;
   inset: 0;
@@ -126,9 +149,8 @@ main {
   z-index: 1000;
 }
 
-/* Caixa central */
 .popup-box {
-  background: #fff;
+  background: #ffe0e0;
   padding: 3rem;
   border-radius: 1.6rem;
   text-align: center;
@@ -139,28 +161,24 @@ main {
   animation: scaleIn 0.3s ease;
 }
 
-/* Ícone */
 .popup-icon {
   font-size: 4rem;
   margin-bottom: 1rem;
   animation: bounce 1s infinite alternate;
 }
 
-/* Título */
 .popup-box h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
   color: #333;
 }
 
-/* Texto */
 .popup-box p {
   font-size: 1.6rem;
   margin-bottom: 2rem;
-  color: #555;
+  color: #111;
 }
 
-/* Botão fechar */
 .popup-close {
   position: absolute;
   top: 1rem;
@@ -169,10 +187,9 @@ main {
   border: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: #888;
+  color: #000;
 }
 
-/* Botão principal */
 .popup-btn {
   background: var(--salmon);
   color: #fff;
@@ -189,7 +206,6 @@ main {
   background: #e05555;
 }
 
-/* Animações */
 @keyframes scaleIn {
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
@@ -200,7 +216,6 @@ main {
   to { transform: translateY(-5px); }
 }
 
-/* Esconder inicialmente */
 .hidden {
   display: none;
 }
