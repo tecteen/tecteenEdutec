@@ -24,9 +24,22 @@ body {
 }
 
 h1 {
-  padding-left: 18.56rem;
-  padding-right: 21.38rem;
-  padding-top: 13.2rem;
-  font-size: 6rem;
-  text-align: center; 
+  align-items: center;
+  text-align: center;
+  font-size: 5.625rem;
+}
+
+.container {
+  background-color: #D6BDFF;
+  width: 127.8rem;
+  height: 68.5rem;
+  margin-inline: auto;
+  border-radius: 5rem;
+  padding-inline: 4rem;
+  gap: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
