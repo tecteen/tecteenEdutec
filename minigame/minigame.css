@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: mistyrose;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.game-container {
+    text-align: center;
+    background: #c4e9ff;
+    padding: 10rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+canvas {
+    background-color: #ffad26;
+    background-image: url('./cenario.png');
+    background-size: 100% 120px; 
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+    border: 3px solid #000;
+    display: block;
+    margin: 10px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #0077ff;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005fcc;
+}

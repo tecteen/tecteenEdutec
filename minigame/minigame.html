@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo dos Celulares</title>
+    <link rel="stylesheet" href="minigame.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1> -- MINIGAME --</h1>
+
+        <div id="startScreen">
+            <h2>Regras:</h2>
+            <p>➡️ Use as setas do teclado ou arraste o boneco com o mouse.</p>
+            <p>📱 Pegue 15 celulares para vencer.</p>
+            <p>❌ Se deixar 3 caírem no chão, você perde.</p>
+            <button id="startBtn">Começar</button>
+        </div>
+
+        <canvas id="gameCanvas" width="500" height="600" class="hidden"></canvas>
+
+        <div id="gameOverScreen" class="hidden">
+            <h2>GAME OVER</h2>
+            <button id="restartBtn1">Reiniciar</button>
+        </div>
+
+        <div id="winScreen" class="hidden">
+            <h2>🎉 Você venceu!</h2>
+            <button id="restartBtn2">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="minigame.js"></script>
+</body>
+</html>
