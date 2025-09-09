@@ -11,7 +11,6 @@
      --cornsilk: #FFF6D1;
 }
 
-
 main{
     background: var(--misty-rose);
     max-width: 100%;
@@ -50,14 +49,12 @@ main h1 {
     padding: 4rem;
     align-items: center;
     justify-content: row;
-    /* padding para o texto ficar debaixo da img */
     padding-top: 15rem;
     background: white;
     border-radius: 2rem;
     width: 280px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
-
   
   .jogo2 img {
         position: absolute; 
@@ -82,14 +79,12 @@ main h1 {
     margin-right: 9rem;
   }
   
-  /*paragrafo*/
   .jogos p {
     font-size: 1.6rem;
     margin-bottom: 2rem;
     color: #333;
   }
-  
-  /*botao*/
+
   .jogo1 a {
     padding: 1rem 3rem;
     border-radius: 1rem;
@@ -102,11 +97,10 @@ main h1 {
 
   }
   
-  /* Opcional: Para o botão da direita, se ele não estiver preenchendo 100% como você quer */
   .jogo2 a {
-    display: block; /* Mude para 'block' para ocupar a largura total */
-    width: 100%; /* Ocupa 100% da largura do elemento pai */
-    padding: 1rem 0; /* Ajuste o padding horizontal para 0 para preencher a largura */
+    display: block; 
+    width: 100%; 
+    padding: 1rem 0;
     border-radius: 1rem;
     color: white;
     text-decoration: none;
@@ -114,7 +108,7 @@ main h1 {
     font-size: 1.4rem;
     transition: all 0.3s ease-in-out;
     background-color: #f24747;
-    text-align: center; /* Centraliza o texto dentro do botão */
+    text-align: center; 
   }
 
   .jogo1 a {
@@ -125,11 +119,13 @@ main h1 {
     background-color: #f24747;
   }
 
-  /*animação*/
+  .button{
+    border: none;
+  }
+
   .jogos a:hover {
     transform: scale(1.05);
   }
-
 
 .resto {
     display: flex;
@@ -146,8 +142,6 @@ main h1 {
     text-align: center;
 }
   
-  
-
 .cards {
     display: flex;
     flex-wrap: wrap;
