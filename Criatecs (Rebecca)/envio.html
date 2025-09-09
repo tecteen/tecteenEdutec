@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="envio.css">
+    <title>Página Criativa</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/global-imgs/logo(fundo transparente).png" alt="logo tecteen">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/conteudos/conteudos.html">Conteúdo</a></li>
+                <li><a href="/Criatecs (Rebecca)/criatec.html " class="active">CriaTec</a></li>
+                <li><a href="/curiosidades/curiosidades.html">Curiosidades</a></li>
+                <li><a href="/Jogo/Jogo.html">Jogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button onclick="window.location.href='criatec.html'" class="btn-fechar"><img src="./assets/botao.png" alt=""></button>
+
+    <div class="container">
+        <h2>Você também é criador, sabia?</h2>
+        <form action="envio.html" method="post" enctype="multipart/form-data">
+            
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" class="email" maxlength="50" placeholder="Digite aqui seu e-mail..."><br><br>
+    
+            <label for="mensagem"></label><br>
+            <textarea id="mensagem" name="mensagem" class="texto" maxlength="100" placeholder="Deixe um recado avisando que você passou por aqui!"></textarea>
+
+            <button type="button" onclick="window.location.href='analise.html'" class="botao">Enviar</button>
+
+        </form>
+    </div>    
+      
+</body>
+</html>
