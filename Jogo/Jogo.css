@@ -55,6 +55,10 @@ main h1 {
     width: 280px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
+
+  .conteudoJogo2 h2{
+    width: 100rem;
+  }
   
   .jogo2 img {
         position: absolute; 
@@ -99,8 +103,7 @@ main h1 {
   
   .jogo2 a {
     display: block; 
-    width: 100%; 
-    padding: 1rem 0;
+    padding: 1rem 4rem;
     border-radius: 1rem;
     color: white;
     text-decoration: none;
@@ -109,14 +112,17 @@ main h1 {
     transition: all 0.3s ease-in-out;
     background-color: #f24747;
     text-align: center; 
+    margin-top: 1rem;
   }
 
   .jogo1 a {
     background-color: #f4c94c;
+    border: none;
   }
   
   .jogo2 a {
     background-color: #f24747;
+    border: none;
   }
 
   .button{
