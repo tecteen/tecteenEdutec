@@ -155,9 +155,6 @@
   color: var(--white);
   text-align: center;
   box-shadow: 0 .4rem 1.2rem rgba(0,0,0,0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   }
 
   .cards img {
@@ -167,13 +164,15 @@
   }
 
   .cards h2 {
-  margin-bottom: 2.88rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3rem;
   font-size: 3.2rem;
   }
 
   .cards p {
   font-size: 1.92rem;
-  margin-bottom: 7.2rem;
+  margin-bottom: 3.7rem;
   }
 
   .card-amarelo p {
@@ -197,6 +196,13 @@
   .cards a:hover {
   transform: scale(1.05);
   }
+
+  .card-salmao, .card-azul, .card-amarelo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
   .card-salmao {
   background-color: var(--salmon);
@@ -230,6 +236,3 @@
   background-color: #ffffff;
   margin-top: 5rem;
   }
-
-
-  
