@@ -6,21 +6,21 @@
   <link rel="stylesheet" href="minigame.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="/index.html">
-                    <img src="/global-imgs/logo(fundo transparente).png" alt="logo tecteen">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../conteudos/conteudos.html">Conteúdo</a></li>
-                <li><a href="../Criatecs (Rebecca)/criatec.html">CriaTec</a></li>
-                <li><a href="../curiosidades/curiosidades.html">Curiosidades</a></li>
-                <li><a href="../Jogo/Jogo.html">Jogo</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/global-imgs/logo(fundo transparente).png" alt="logo tecteen">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../conteudos/conteudos.html">Conteúdo</a></li>
+        <li><a href="../Criatecs (Rebecca)/criatec.html">CriaTec</a></li>
+        <li><a href="../curiosidades/curiosidades.html">Curiosidades</a></li>
+        <li><a href="../Jogo/Jogo.html">Jogo</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <div class="overlay">
     <div class="game-card">
@@ -28,7 +28,7 @@
       <!-- Cabeçalho com botão X -->
       <div class="card-header">
         <h2>MiniGame</h2>
-        <button class="close-btn" onclick="window.location.href='../Jogo.html'">✖</button>
+        <button class="close-btn" onclick="window.history.back()">✖</button>
       </div>
 
       <!-- Container do jogo -->
@@ -44,22 +44,21 @@
         </div>
 
         <!-- Canvas -->
-        <canvas id="gameCanvas" width="500" height="600" class="hidden"></canvas>
+        <canvas id="gameCanvas" width="600" height="720" class="hidden"></canvas>
 
         <!-- Game Over -->
         <div id="gameOverScreen" class="hidden">
           <h2>💀 Você perdeu!</h2>
           <button id="restartBtn1">Jogar Novamente</button>
-          <button onclick="window.location.href='../jogo'">Sair</button>
+          <button onclick="window.history.back()">Sair</button>
         </div>
 
         <!-- Vitória -->
         <div id="winScreen" class="hidden">
           <h2>🎉 Você ganhou!</h2>
-          <!-- Aqui pode entrar a imagem do gato -->
           <!-- <img src="../assets/bichodofogo.png" alt="Gato Parabéns" class="gato-img"> -->
           <button id="restartBtn2">Jogar Novamente</button>
-          <button onclick="window.location.href='../Jogo/Jogo.html'">Sair</button>
+          <button onclick="window.history.back()">Sair</button>
         </div>
 
       </div>

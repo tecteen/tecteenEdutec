@@ -9,6 +9,19 @@ const startBtn = document.getElementById("startBtn");
 const restartBtn1 = document.getElementById("restartBtn1");
 const restartBtn2 = document.getElementById("restartBtn2");
 
+const likeBtn = document.querySelector('.like-btn');
+const dislikeBtn = document.querySelector('.dislike-btn');
+
+likeBtn.addEventListener('click', () => {
+  likeBtn.classList.add('selected');
+  dislikeBtn.classList.remove('selected');
+});
+
+dislikeBtn.addEventListener('click', () => {
+  dislikeBtn.classList.add('selected');
+  likeBtn.classList.remove('selected');
+});
+
 // Imagens
 const playerImage = new Image();
 playerImage.src = "Cópia de jogo EDUTEC.png";
@@ -73,9 +86,7 @@ canvas.addEventListener("mousemove", (e) => {
     player.x = mouseX - player.width / 2;
 
     if (player.x < 0) player.x = 0;
-    if (player.x + player.width > canvas.width) {
-      player.x = canvas.width - player.width;
-    }
+    if (player.x + player.width > canvas.width) player.x = canvas.width - player.width;
   }
 });
 
@@ -105,9 +116,7 @@ function update() {
       phones.splice(i, 1);
       i--;
       score++;
-      if (score >= 15) {
-        winGame();
-      }
+      if (score >= 15) winGame();
       continue;
     }
 
@@ -116,9 +125,7 @@ function update() {
       phones.splice(i, 1);
       i--;
       lives--;
-      if (lives <= 0) {
-        endGame();
-      }
+      if (lives <= 0) endGame();
     }
   }
 }

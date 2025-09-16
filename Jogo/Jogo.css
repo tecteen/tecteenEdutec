@@ -1,71 +1,77 @@
 @import url(../globais/global.css);
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --misty-rose: #FFE0E0;
-     --cornsilk: #FFF6D1;
+    --cornsilk: #FFF6D1;
+    --salmon: #FF6B6B;
+    --baby-blue: #B9CFFE;
+    --purple: #706492;
+    --yellow: #E1B142;
 }
 
-body{
-  background: var(--misty-rose);
-  width: 100%;
-  background: linear-gradient(to bottom,var(--misty-rose) 0%,var(--cornsilk) 30%,var(--cornsilk) 100%);
+body {
+    background: linear-gradient(to bottom, var(--misty-rose) 0%, var(--cornsilk) 100%);
 }
 
 main h1 {
     font-size: 5rem;
     font-weight: 600;
-    margin: 0 0 2rem 200px; 
-  }
-  
+    margin: 5rem 0 2rem 200px;
+}
+
 .jogos {
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    margin: 4rem auto;
+    gap: 8rem;
+    margin: 8rem auto;
     flex-wrap: wrap;
     max-width: 1000px;
-    position: relative;
-  }
+}
 
-  .conteudoJogo1{
-    padding: 4rem;
-    align-items: center;
-    justify-content: row;
-    padding-top: 15rem;
+.jogo1 {
+    position: relative;
+    width: 320px;
+    height: 28rem;
+}
+
+.conteudoJogo1 {
+    padding: 3rem;
+    padding-top: 12rem;
     background: white;
     border-radius: 2rem;
-    width: 280px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-  .jogo1 img{
-    position: absolute; 
-    left: 339px;
-    top: -74px;
-    width: 318px;
-    z-index: 10px; 
-  }
-  
-  .jogos h2 {
-    font-size: 1,7rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    margin-right: 9rem;
-  }
-  
-  .jogos p {
+.jogo1 img {
+    position: absolute;
+    top: -56px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 290px;
+    z-index: 10;
+}
+
+.jogos h2 {
+    font-size: 1.7rem;
+}
+
+.jogos p {
     font-size: 1.6rem;
-    margin-bottom: 2rem;
     color: #333;
-  }
+}
 
-  .jogo1 a {
+.jogo1 a {
     padding: 1rem 3rem;
     border-radius: 1rem;
     color: white;
@@ -74,42 +80,125 @@ main h1 {
     font-size: 1.4rem;
     transition: all 0.3s ease-in-out;
     background-color: #f4c94c;
-
-  }
-  
-  .jogo1 a {
-    background-color: #f4c94c;
     border: none;
-  }
-  
-  .jogo1 a:hover {
-    filter: brightness(1.1);
 }
 
-
-  .button{
-    border: none;
-  }
-
-  .jogos a:hover {
+.jogo1 a:hover {
+    filter: brightness(1.1);
     transform: scale(1.05);
-  }
+}
 
-  .resto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.extra-cards {
     padding: 0 2rem;
-  }
-
-.resto h2 {
-    font-size: 3rem;
-    margin-bottom: 4rem;
-
-    font-weight: bold;
     text-align: center;
 }
 
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 0;
+}
 
+.cards div {
+    width: 28.8rem;
+    height: 40rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: var(--white);
+    text-align: center;
+    box-shadow: 0 .4rem 1.2rem rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.cards img {
+    width: 9.6rem;
+    height: auto;
+    margin-bottom: 2.4rem;
+}
+
+.cards h2 {
+    margin-bottom: 2.88rem;
+    font-size: 3.2rem;
+}
+
+.cards p {
+    font-size: 1.92rem;
+    margin-bottom: 3.2rem;
+}
+
+.card-amarelo p {
+    margin-bottom: 5.5rem;
+}
+
+.card-azul h2, .card-azul p {
+    color: var(--purple);
+}
+
+.cards a {
+    background: var(--white);
+    padding: 1.44rem 7.68rem;
+    border-radius: 2.5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.cards a:hover {
+    transform: scale(1.05);
+}
+
+.card-salmao {
+    background-color: var(--salmon);
+}
+
+.card-salmao a {
+    color: var(--salmon);
+}
+
+.card-azul {
+    background-color: var(--baby-blue);
+}
+
+.card-azul a {
+    color: var(--baby-blue);
+}
+
+.card-roxo {
+    background-color: var(--purple);
+}
+
+.card-roxo a {
+    color: var(--purple);
+}
+
+.card-amarelo {
+    background-color: var(--yellow);
+}
+
+.card-amarelo a {
+    color: var(--yellow);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+  background-color: #ffffff;
+  margin-top: 5rem;
+}
+.logoRodape img{
+    width: 150px;
+}
+.aboutRodape p{
+    width: 400px;
+}
+.contactRodape a{
+    color: var(--purple);
+}
