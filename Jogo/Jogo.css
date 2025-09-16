@@ -11,11 +11,10 @@
      --cornsilk: #FFF6D1;
 }
 
-main{
-    background: var(--misty-rose);
-    max-width: 100%;
-    background: linear-gradient(to bottom,var(--misty-rose) 0%,var(--cornsilk) 30%,var(--cornsilk) 100%);
-    padding-top: 4rem;
+body{
+  background: var(--misty-rose);
+  width: 100%;
+  background: linear-gradient(to bottom,var(--misty-rose) 0%,var(--cornsilk) 30%,var(--cornsilk) 100%);
 }
 
 main h1 {
@@ -45,32 +44,9 @@ main h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
-  .conteudoJogo2{
-    padding: 4rem;
-    align-items: center;
-    justify-content: row;
-    padding-top: 15rem;
-    background: white;
-    border-radius: 2rem;
-    width: 280px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
-  .conteudoJogo2 h2{
-    width: 100rem;
-  }
-  
-  .jogo2 img {
-        position: absolute; 
-        right: 199px;
-        top: -75px;
-        width: 285px;
-        z-index: 10px; 
-  }
-
   .jogo1 img{
     position: absolute; 
-    left: 179px;
+    left: 339px;
     top: -74px;
     width: 318px;
     z-index: 10px; 
@@ -101,29 +77,15 @@ main h1 {
 
   }
   
-  .jogo2 a {
-    display: block; 
-    padding: 1rem 4rem;
-    border-radius: 1rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.4rem;
-    transition: all 0.3s ease-in-out;
-    background-color: #f24747;
-    text-align: center; 
-    margin-top: 1rem;
-  }
-
   .jogo1 a {
     background-color: #f4c94c;
     border: none;
   }
   
-  .jogo2 a {
-    background-color: #f24747;
-    border: none;
-  }
+  .jogo1 a:hover {
+    filter: brightness(1.1);
+}
+
 
   .button{
     border: none;
@@ -133,7 +95,7 @@ main h1 {
     transform: scale(1.05);
   }
 
-.resto {
+  .resto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,99 +109,7 @@ main h1 {
     font-weight: bold;
     text-align: center;
 }
-  
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-    justify-content: flex-start;
-}
 
-.cards div {
-    width: 28.8rem;
-    height: 40rem;
-    padding: 2rem;
-    border-radius: 2rem;
-    color: var(--white);
-    text-align: center;
-    box-shadow: 0 .4rem 1.2rem rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.cards img {
-    width: 9.6rem;
-    height: auto;
-    margin-bottom: 2.4rem;
-}
-
-.cards h2 {
-    margin-bottom: 2.88rem;
-    font-size: 3.2rem;
-}
-
-.cards p {
-    font-size: 1.92rem;
-    margin-bottom: 3.2rem;
-}
-
-.card-amarelo p {
-    margin-bottom: 5.5rem;
-}
-
-.card-azul h2, .card-azul p {
-    color: var(--purple);
-}
-
-.cards a {
-    background: var(--white);
-    padding: 1.44rem 7.68rem;
-    border-radius: 2.5rem;
-    font-weight: bold;
-    font-size: 1.6rem;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.cards a:hover {
-    transform: scale(1.05);
-}
-
-.card-salmao {
-    background-color: var(--salmon);
-}
-
-.card-salmao a {
-    color: var(--salmon);
-}
-
-.card-azul {
-    background-color: var(--baby-blue);
-}
-
-.card-azul a {
-    color: var(--baby-blue);
-}
-
-.card-roxo {
-    background-color: var(--purple);
-}
-
-.card-roxo a {
-    color: var(--purple);
-}
-
-.card-amarelo {
-    background-color: var(--yellow);
-}
-
-.card-amarelo a {
-    color: var(--yellow);
-}
-
-.jogo1 a:hover {
-    filter: brightness(1.1);
-}
 
 

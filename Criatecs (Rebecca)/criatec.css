@@ -30,12 +30,23 @@
   background-image: url(./certo.png);
   }
 
+
+  .container-tinta {
+    display: flex;
+    justify-content: flex-end; 
+  }
+  
   .tinta {
+  
   background-image: url('./assets/image 5.png'); 
   background-repeat: no-repeat;
-  width: 57.375rem;
+  margin-right: 31.8rem;
+  width: 100%;
+  max-width: 57.375rem;
   height: 22rem;                    
-  padding-left: 63rem;
+  margin-left: auto;
+  background-size: contain;
+  
   }
 
   h1 {
@@ -47,10 +58,11 @@
   }
 
   h2 {
-  padding-left: 15rem;
-  font-size: 2.5rem;
-  margin-top: -15rem;
-  padding-bottom: 2.56rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: -11rem; 
+    margin-bottom: 2rem; 
+    margin-right: 90rem;
   }
 
   .container {
@@ -97,33 +109,32 @@
   font-size: 3rem;
   font-weight: 400;
   line-height: 5rem;
-  padding-left: 3rem;
   text-align: center;
+  width: 100%;
   }
 
   .compartilhe {
-  position: absolute;
-  width: 817px;
-  height: 165px;
-  left: 52rem;
-  top: 140rem;
-  width: 51.0625rem;
-  height: 10.3125rem;
-  border-radius: 1.25rem;
-  background: linear-gradient(90deg, #FE609D 0%, #D04AC1 100%);
-  text-align: center; 
-
-  font-size: 5rem;
-  font-weight: 400;
-  font-weight: bold;
-  cursor: pointer;
+    display: block;
+    margin: 4rem auto; 
+    width: 51.0625rem;
+    height: 10.3125rem;
+    border-radius: 1.25rem;
+    margin-top: -32rem;
+    margin-bottom: 20rem;
+    background: linear-gradient(90deg, #FE609D 0%, #D04AC1 100%);
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
   }
+
 
   .adicione {
   padding-left: 15rem;
   font-size: 2.5rem;
   margin-top: -129rem;
   padding-bottom: 2.56rem;
+  margin-left: 3rem;
   }
 
   .mural {

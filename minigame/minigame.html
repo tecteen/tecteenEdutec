@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Jogo dos Celulares</title>
-    <link rel="stylesheet" href="minigame.css">
+  <meta charset="UTF-8">
+  <title>MiniGame</title>
+  <link rel="stylesheet" href="minigame.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1> -- MINIGAME --</h1>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/global-imgs/logo(fundo transparente).png" alt="logo tecteen">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../conteudos/conteudos.html">Conteúdo</a></li>
+                <li><a href="../Criatecs (Rebecca)/criatec.html">CriaTec</a></li>
+                <li><a href="../curiosidades/curiosidades.html">Curiosidades</a></li>
+                <li><a href="../Jogo/Jogo.html">Jogo</a></li>
+            </ul>
+        </nav>
+    </header>
 
+  <div class="overlay">
+    <div class="game-card">
+
+      <!-- Cabeçalho com botão X -->
+      <div class="card-header">
+        <h2>MiniGame</h2>
+        <button class="close-btn" onclick="window.location.href='../Jogo.html'">✖</button>
+      </div>
+
+      <!-- Container do jogo -->
+      <div class="game-container">
+
+        <!-- Tela inicial -->
         <div id="startScreen">
-            <h2>Regras:</h2>
-            <p>➡️ Use as setas do teclado ou arraste o boneco com o mouse.</p>
-            <p>📱 Pegue 15 celulares para vencer.</p>
-            <p>❌ Se deixar 3 caírem no chão, você perde.</p>
-            <button id="startBtn">Começar</button>
+          <h2>📜 Regras:</h2>
+          <p>➡️ Use as setas do teclado ou arraste o boneco com o mouse.</p>
+          <p>📱 Pegue 15 celulares para vencer.</p>
+          <p>❌ Se deixar 3 caírem no chão, você perde.</p>
+          <button id="startBtn">Começar</button>
         </div>
 
+        <!-- Canvas -->
         <canvas id="gameCanvas" width="500" height="600" class="hidden"></canvas>
 
+        <!-- Game Over -->
         <div id="gameOverScreen" class="hidden">
-            <h2>GAME OVER</h2>
-            <button id="restartBtn1">Reiniciar</button>
+          <h2>💀 Você perdeu!</h2>
+          <button id="restartBtn1">Jogar Novamente</button>
+          <button onclick="window.location.href='../jogo'">Sair</button>
         </div>
 
+        <!-- Vitória -->
         <div id="winScreen" class="hidden">
-            <h2>🎉 Você venceu!</h2>
-            <button id="restartBtn2">Jogar Novamente</button>
+          <h2>🎉 Você ganhou!</h2>
+          <!-- Aqui pode entrar a imagem do gato -->
+          <!-- <img src="../assets/bichodofogo.png" alt="Gato Parabéns" class="gato-img"> -->
+          <button id="restartBtn2">Jogar Novamente</button>
+          <button onclick="window.location.href='../Jogo/Jogo.html'">Sair</button>
         </div>
-    </div>
 
-    <script src="minigame.js"></script>
+      </div>
+
+      <!-- Rodapé com like/dislike -->
+      <div class="card-footer">
+        <button class="like-btn">👍</button>
+        <button class="dislike-btn">👎</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="minigame.js"></script>
 </body>
 </html>

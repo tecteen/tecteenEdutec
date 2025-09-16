@@ -2,86 +2,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-font-size: 62.5%; 
-background: #F1DEFF;
-color: #2B1475;
+  font-size: 62.5%;
+  background: #F1DEFF;
+  color: #2B1475;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 9.5rem); 
 }
 
 .container {
-width: 47.1875rem;
-height: 53.5625rem;
-background-color: #706492;
-margin-left: 55rem;
-margin-top: 1.5rem;
-padding-top: 4rem;
-padding-left: 17rem;
-border-radius: 0.75rem;
-box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.25); 
+  width: 45rem;
+  background-color: #706492;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
-color: aliceblue;
-align-items: center;
-text-align: center;
-font-size: 2.5rem;
-margin-left: -15rem;
-margin-top: 2rem;
+  color: aliceblue;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-.email {
-width: 110%;
-padding: 1.3rem;
-border-radius: 0.5rem;
-align-items: center;
-margin-left: -9.5rem;
-margin-top: 3rem;
-border: none;
+.email,
+.texto,
+.botao {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: none;
+  font-size: 1.6rem;
 }
 
 .texto {
-width: 110%;
-padding: 6rem;
-border-radius: 0.5rem;
-margin-left: -9.5rem;
-margin-top: 3rem;
-resize: none;
-text-align: center;
-border: none;
+  resize: vertical;
+  min-height: 15rem;
 }
 
 .botao {
-width: 110%;
-padding: 2rem;
-border-radius: 0.5rem;
-margin-left: -9.5rem;
-margin-top: 3rem;
-resize: none;
-text-align: center;
-background-color: #FF6B6B;
-box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.25); 
-border: none;   
-
-color: #ffffff;
-font-size: 2.7rem;
-font-weight: bold;
-cursor: pointer;
+  padding: 2rem;
+  background-color: #FF6B6B;
+  box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 2.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
 }
 
 .btn-fechar {
-    margin-top: 2rem;
-   margin-left: 149.5rem;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    color: #333;
-  }
-  
+  position: absolute;
+  top: 10rem; 
+  right: 2rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
