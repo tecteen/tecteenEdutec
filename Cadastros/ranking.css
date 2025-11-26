@@ -1,0 +1,52 @@
+@import url(/globais/global.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    }
+
+:root {
+  font-size: 62.5%;
+
+  --black: #000;
+  --white: #FFFFFF;
+  --yellow: #E1B142;
+  --purple: #706492;
+  --baby-blue: #B9CFFE; 
+  --bg-fundoinferior:#EDF2FF;
+  --salmon: #FF6B6B;
+  
+  --light-yellow: #FFF6D1;
+  --very-light-yellow: #FFF8EA; 
+  --light-salmon: #FFE0E0;
+  --very-light-purple: #F1DEFF;
+  --light-purple: #D6BDFF;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem; 
+  background-color: white;
+  border-bottom: none;
+}
+
+.secao{
+  margin-block: 5rem;
+  margin-inline: 8rem;
+  background: var(--salmon);
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #B9CFFE, #EDF2FF);
+    background-repeat: no-repeat;
+  }
+
+  .container{
+    background-color: var(--white);
+  }
